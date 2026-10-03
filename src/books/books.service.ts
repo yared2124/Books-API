@@ -3,6 +3,16 @@ import {Injectable} from '@nestjs/common';
 
 @Injectable()
 export class BookService {
+
+
+   private books: { id: number; title: string; author: string }[] = [
+    {
+      id:1,
+      title: 'Book 1',
+      author: 'Author 1'
+    },
+   ];
+
    findAll(): string{
     return 'return all books';
    }
